@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>
+        {% block title %}
+        Мой сайт
+        {% endblock %}
+    </title>
+</head>
+<body>
+    
+    <div class="parent">
+        <ul>
+            <li><a href="index">Главная</a></li>
+            <li><a class="a_menu" href="clothes">Одежда</a></li>
+            <li><a class="a_menu" href="shoes">Обувь</a></li>
+            <li><a class="a_menu" href="jackets">Куртки</a></li>
+            <li><a class="a_menu" href="#">Контакты</a></li>
+            <li><a class="a_menu" href="#">О нас</a></li>
+        </ul>
+    </div>
+
+    <h1 class="container content">{{ title }}</h1>
+
+    {% block content %}
+    Страница не заполнена
+    {% endblock %}
+
+    <footer>
+        <div class="footer_backgrount1 container">
+            <div class="footer1 content">
+                <div class="footer1_item">
+                    <img src="/static/image/freeDelivery.png" alt="">
+                    <h3>Free Delivery</h3>
+                    <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                </div>
+                <div class="footer1_item">
+                    <img src="/static/image/Sales.png" alt="">
+                    <h3>Sales & discounts</h3>
+                    <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                </div>
+                <div class="footer1_item">
+                    <img src="/static/image/quality.png" alt="">
+                    <h3>Quality assurance</h3>
+                    <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer_backgrount2 container">
+            <div class="footer2 content">
+                <div class="footer2_item">
+                    <img src="/static/image/mem.png" alt="">
+                    <p class="footer2_item_1">“Vestibulum quis porttitor dui!<br> Quisque viverra nunc mi,
+                        <span class="footer2_item_1_label"> a pulvinar purus<br> condimentum“</span>
+                    </p>
+                </div>
+                <div class="footer2_item">
+                    <p class="footer2_item_2">SUBSCRIBE<br>
+                        <span class="footer2_item_2_label">FOR OUR NEWLETTER AND PROMOTION</span>
+                    </p>
+                    <div class="input">
+                        <input type="text" size="40" value="   Enter Your Email" class="in_text">
+                        <button class="btn">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div  class="footer_backgrount3 container">
+            <div class="content footer3">
+                <h3>© 2022  Brand  All Rights Reserved.</h3>
+                <div class="footer3_container">
+                    <div class="icon_net">
+                        <img src="/static/image/facebook.png" alt="">
+                    </div>
+                    <div class="icon_net">
+                        <img src="/static/image/instagram.png" alt="">
+                    </div>
+                    <div class="icon_net">
+                        <img src="/static/image/pinterest.png" alt="">
+                    </div>
+                    <div class="icon_net">
+                        <img src="/static/image/twitter.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

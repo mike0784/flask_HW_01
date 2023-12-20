@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}
+{{ super() }} - {{ title }}
+{% endblock %}
+
+{% block content %}
+<div class="container content">
+    <img style="width: 200px; height: 300px;" src={{ item.foto }} alt="">
+    <h2>{{ item.title1 }}</h2>
+    <p>{{ item.description }}</p>
+    <h3>{{ item.price }}</h3>
+</div>
+{% endblock %}

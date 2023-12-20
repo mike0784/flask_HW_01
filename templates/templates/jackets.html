@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %}
+{{ super() }} - {{ title }}
+{% endblock %}
+
+{% block content %}
+<div class="catalog container content">
+    {% for item in items %}
+
+    <a href={{ item.href }}>
+        <div class="item">
+            <img src={{ item.foto }} alt="">
+            <div class="bottun">
+                <img class="icon" src="/static/image/Add.png" alt="">
+                <h4>Add to Cart</h4>
+            </div>
+        </div>
+        <div class="catalog_item">
+            <h3 class="item_h3">{{ item.title1 }}</h3>
+            <p class="item_p">{{ item.description }}</p>
+            <h3 class="item_price">${{ item.price }}</h3>
+        </div>
+    </a>
+    {% endfor %}
+</div>
+{% endblock %}
